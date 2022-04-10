@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food menu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+          $("#more").click(function(){
+            $(".food-card__cost").addClass("food-card__cost-view");
+            $(".more").addClass("more-hide");
+          });
+        });
+        </script>
+
+    <div class="container">
+        <div class="food-card">
+            <img class="food-card__img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/gxnatvnl4msqsvompnpk" alt="">
+            <h2 class="food-card__title"> Chicken Gravy</h2>
+            <p class="food-card__des"> north indian style <br> chicken thanduri <span id="more" class="more">...more</span></p>
+            <p class="food-card__cost"><span>reaching time : 50 min</span><span>cost : 250rs</span></p>
+            <button class="food-card__btn">Add +</button>
+        </div>
+    </div>
+</body>
+</html>
